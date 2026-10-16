@@ -43,25 +43,49 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px; /* Távolság az ikon és a szöveg között */
-            background-color: #1a1a1e;
+            gap: 12px;
             color: #ffffff;
             text-decoration: none;
             padding: 16px;
             margin-bottom: 12px;
             border-radius: 12px;
-            border: 1px solid #2a2a30;
             font-weight: 600;
             transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         .link-btn:hover {
-            background-color: #2a2a32;
-            border-color: #444450;
             transform: translateY(-2px);
+            filter: brightness(1.15); /* Finom kivilágosodás rámutatáskor */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
         }
-        /* Ikonok méretezése */
         .link-btn i {
             font-size: 1.2rem;
+        }
+
+        /* --- Platform-specifikus Márkaszínek --- */
+        .btn-twitch {
+            background-color: #9146FF;
+        }
+        .btn-youtube {
+            background-color: #FF0000;
+        }
+        .btn-youtube-playlists {
+            background-color: #CC0000;
+        }
+        .btn-tiktok {
+            background-color: #000000;
+            border: 1px solid #25F4EE; /* TikTok ciánkék keret */
+        }
+        .btn-instagram {
+            /* Instagram hivatalos színátmenete (Gradient) */
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .btn-facebook {
+            background-color: #1877F2;
+        }
+        .btn-steam {
+            background-color: #171a21;
+            border: 1px solid #66c0f4; /* Steam világoskék keret */
         }
     </style>
 </head>
@@ -70,27 +94,7 @@
     <h1>th3deny</h1>
     
     <div class="links-container">
-        <a href="https://www.twitch.tv/th3deny_" target="_blank" class="link-btn">
+        <a href="https://www.twitch.tv/th3deny_" target="_blank" class="link-btn btn-twitch">
             <i class="fa-brands fa-twitch"></i> Twitch
         </a>
-        <a href="https://www.youtube.com/@th3deny" target="_blank" class="link-btn">
-            <i class="fa-brands fa-youtube"></i> YouTube
-        </a>
-        <a href="https://www.youtube.com/@th3deny/playlists" target="_blank" class="link-btn">
-            <i class="fa-solid fa-list"></i> YouTube Playlists
-        </a>
-        <a href="https://www.tiktok.com/@th3deny" target="_blank" class="link-btn">
-            <i class="fa-brands fa-tiktok"></i> TikTok
-        </a>
-        <a href="https://www.instagram.com/th3deny/" target="_blank" class="link-btn">
-            <i class="fa-brands fa-instagram"></i> Instagram
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61592311498330" target="_blank" class="link-btn">
-            <i class="fa-brands fa-facebook"></i> Facebook
-        </a>
-        <a href="https://store.steampowered.com/curator/46276308/" target="_blank" class="link-btn">
-            <i class="fa-brands fa-steam"></i> Steam Curator
-        </a>
-    </div>
-</body>
-</html>
+        <a href="
